@@ -84,6 +84,7 @@ Se hace un unlock del mutex para que los clientes puedan seguir buscando una caj
 Después se imprime que el cliente ha salido después de esperar el tiempo calculado anteriormente.
  
 #### Función auxiliar cajasOcupadas:
-Esta función devuelve true si todas las cajas están ocupadas. - Función auxiliar cajaLibre:
+Esta función devuelve true si todas las cajas están ocupadas. 
 
+#### Función auxiliar cajaLibre:
 Esta función devuelve una caja que esté libre.
