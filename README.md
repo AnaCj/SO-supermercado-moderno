@@ -1,12 +1,12 @@
-### supermercado-moderno
+# supermercado-moderno
 
-# Declaramos las variables globales:
+### Declaramos las variables globales:
 - Dos de tipo int, para contar el número de cajas y el número de clientes.
 - Un array dinámico de cajas de tipo bool para saber si está ocupada o no.
 - Un array dinámico de int para el tiempo de espera de clientes.
 - Un mutex de tipo pthread_mutex_t para controlar la cola.
 - Un tipo pthread_cond_t para la condición del mutex.
-# Programa principal (función main): Primero declaramos las variables:
+### Programa principal (función main): Primero declaramos las variables:
 - Una de tipo int como contador.
 - Un array dinámico para los identificadores de los clientes.
 - Un array dinámico de threads que serán los clientes.
@@ -24,7 +24,7 @@ Inicializamos la variable media y la calculamos sacando los valores del tiempo d
 Se inicializa la variable desviación y se calcula. Liberamos la memoria.
 Para finalizar se imprime un mensaje mostrando que el supermercado se ha cerrado, otro mostrando el tiempo medio de espera y otro para la desviación típica.
 
-# Función que ejecutaran los threads( cliente): Primero declaramos las variables:
+### Función que ejecutaran los threads( cliente): Primero declaramos las variables:
 - Cuatro variables de tipo int, una para la caja a la que irá el cliente, otra para el identificador del cliente, y dos para los cálculos del tiempo de espera.
 Creamos una semilla con la hora del ordenador para que sea más aleatorio el uso de rand(). Imprimimos por pantalla que el cliente está comprando.
 Hacemos que espere un tiempo aleatorio mientras compra.
@@ -47,6 +47,6 @@ Se marca como false en el array de cajas la actual para que se vea como libre. M
 Se hace un unlock del mutex para que los clientes puedan seguir buscando una caja. Finaliza la sección crítica.
 Después se imprime que el cliente ha salido después de esperar el tiempo calculado anteriormente.
  
-# Función auxiliar cajasOcupadas:
+### Función auxiliar cajasOcupadas:
 Esta función devuelve true si todas las cajas están ocupadas. - Función auxiliar cajaLibre:
 Esta función devuelve una caja que esté libre.
